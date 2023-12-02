@@ -1,14 +1,19 @@
 ﻿#include <iostream>
+#include <string>
+
 #include "Functions.hpp"
 
 int main()
 {
-    Calculator cal;
     unsigned int i = 0;
     std::string input;
     std::cout << "enter the expression: ";
     std::getline(std::cin, input);
+    Calculator cal{input};
+
+
     std::cout << "answer: " << cal.Expr(input, i) << '\n';
+
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
