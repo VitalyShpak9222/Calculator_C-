@@ -11,7 +11,6 @@ int main()
     std::getline(std::cin, input);
     Calculator cal{input};
 
-
     std::cout << "answer: " << cal.Expr(input, i) << '\n';
 
 }
